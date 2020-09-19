@@ -2,7 +2,7 @@ package server
 
 import (
 	"encoding/json"
-	"github.com/parvez0/whatsapp-provisioner/custom_logger"
+	"github.com/parvez0/metric-ingestion/custom_logger"
 	"net/http"
 )
 

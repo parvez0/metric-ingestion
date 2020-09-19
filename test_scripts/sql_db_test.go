@@ -1,7 +1,7 @@
 package test_scripts
 
 import (
-	sqlitedb "github.com/parvez0/whatsapp-provisioner/sqlite-db"
+	sqlitedb "github.com/parvez0/metric-ingestion/sqlite-db"
 	"testing"
 )
 

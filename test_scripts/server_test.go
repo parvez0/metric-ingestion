@@ -2,7 +2,7 @@ package test_scripts
 
 import (
 	"github.com/parvez0/go-requests/requests"
-	"github.com/parvez0/whatsapp-provisioner/server"
+	"github.com/parvez0/metric-ingestion/server"
 	"testing"
 )
 
