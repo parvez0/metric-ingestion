@@ -1,11 +1,11 @@
 package sqlite_db
 
 import (
-	"bitbucket.org/yellowmessenger/whatsapp-infra-provisioner/custom_logger"
 	"database/sql"
 	"errors"
 	"fmt"
 	_ "github.com/mattn/go-sqlite3"
+	"github.com/parvez0/metric-ingestion/custom_logger"
 	"os"
 )
 
