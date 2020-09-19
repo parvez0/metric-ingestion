@@ -16,3 +16,4 @@
 # IDE settings
 .idea/*
 ./test.go
+./data/*
