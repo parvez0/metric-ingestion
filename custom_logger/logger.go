@@ -14,7 +14,7 @@ func NewLogger() *Logger {
 	logger := Logger{baseLogger}
 	var err error
 	// set REQUESTS_LOGLEVEL for log level, defaults to info
-	level, exist := os.LookupEnv("REQUESTS_LOGLEVEL")
+	level, exist := os.LookupEnv("LOGLEVEL")
 	if !exist{
 		level = "info"
 	}
