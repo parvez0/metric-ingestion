@@ -27,6 +27,11 @@ func CreateServer()  {
 		clog.Debugf("server is running in testing environment creating a dummy table - %s", table)
 	}
 
+	serverPort := "5000"
+	if os.Getenv("PORT") != ""{
+		serverPort = os.Getenv("PORT")
+	}
+
 	// creating the schema and tables for first time initialization
 	db.PopulateDB(table)
 
@@ -36,8 +41,8 @@ func CreateServer()  {
 	http.HandleFunc("/report", FetchReport)
 
 	// creating http server and listening on port 5000
-	clog.Info("go server starting and is listening on : 5000")
-	if err := http.ListenAndServe(":5000", nil); err != nil {
+	clog.Info("go server starting and is listening on : "+serverPort)
+	if err := http.ListenAndServe(":"+serverPort, nil); err != nil {
 		clog.Panicf("failed to start server - %+v", err)
 	}
 }
